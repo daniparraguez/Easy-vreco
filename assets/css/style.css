@@ -1,0 +1,23 @@
+div#map{
+	width: 100%;
+	height: 100vh;
+}
+.jumbotron,.ruta {
+	background-color: #00C4C1;
+	color:white;
+}
+
+.ruta{
+	padding-left: 4em;
+	overflow: hidden;
+}
+form{
+	padding-top: 2em;
+}
+input#inicio.form-control, input#fin.form-control{
+	width: 50%;
+
+}
+div.input-group{
+	margin-bottom: 2em;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/VEL.png" />
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Easy-vreco!</title>
+  </head>
+  <body>
+<section class="ruta container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <h2 class="text-white">Planea tu ruta con Easy-vreco!</h2>
+        <p>Elige desde dónde y hasta dónde pedalear:</p>
+<form>
+  <div class="input-group">
+    <span class="input-group-addon"><img class="icon" src="assets/img/shape.png" alt=""></span><span>
+    <input id="inicio" type="text" class="form-control" placeholder="Ingrese un punto de partida">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon"><img class="icon" src="assets/img/shape2.png" alt=""></span><span>
+    <input id="fin" type="text" class="form-control" placeholder="Ingrese su destino"></span>
+  </div>
+     <button type="button" id="trazar-ruta" class="btn btn-md btn-default">¡TRAZAR RUTA!</button>
+</form>
+</div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="jumbotron" id="map">
+      </div>
+    </div>
+</section>
+
+
+<!-- script -->
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAyoMugEWERAVaz0t57B6lMbMVpOGmFBk&callback=initMap&libraries=places">
+</script>
+
+  </body>
+</html>
